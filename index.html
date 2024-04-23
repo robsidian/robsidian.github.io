@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Robsidian planets</title>
+		<title>Dr. Rob Spaargaren - Exoplanetary Scientist</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -29,6 +29,7 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
+                            <h1> UNDER CONSTRUCTION </h1><br />
 							<h2>About</h2>
 						</header>
 						<p>I am a <strong> computational Earth and Planetary Scientist </strong> interested in the evolution and habitability of rocky planets. My research involves a multitude of modelling frameworks simulating the formation, properties, and long-term evolution of rocky planets. I combine these models to ultimately answer two fundamental questions: </p><br />
@@ -44,45 +45,56 @@
 <!-- <a href="http://html5up.net">HTML5 UP</a> -->
 				<!-- Two -->
 					<section id="Work">
-						<h2>My work</h2>
-				
+                        <div class="container">
+                            <h2>Research: chemical compositions of rocky exoplanets</h2><br />
+                            
+                            <p> It is not possible to directly observe the composition of a rocky planet. However, there are other way to unveil their chemical make-up, and study the chemical diversity of rocky exoplanets. I make use of the fundamental chemical link between a rocky planet and its host star, which originates in their formation process. When a star forms from a collapsing cloud, a part of the cloud forms a disk around the proto-star due to conservation of angular momentum. In this cloud, solid material condenses, forming dust, pebbles, and planetesimals. Eventually, this condensed material forms a rocky planet. By making use of this fundamental connection, my collaborators and I unveil the rich and diverse worlds that exist in this Universe. </p>
+                        
+                            <header>
+                                <h3> Chemical composition of rocky exoplanets </h3>
+                                <img class="image left" src="images/Hypatia_triangle.png" alt="Stellar compositions from Hypatia catalog" width="800" height="500" >
+                                <p> The chemical composition of stars is readily available for most stellar types. Large databases with compositions for many stars are available online, such as the <a href="https://www.hypatiacatalog.com/" target="_blank">Hypatia catalog</a> and the <a href="https://www.galah-survey.org/" target="_blank">GALAH survey</a>. These stellar compositions inform us about rocky exoplanet compositions. However, first we must consider the planet formation process. Smaller rocky planets, such as Earth, primarily form from material that can condense in the Proto-Planetary disk. These planets are therefore depleted in volatile elements. Comparing the elemental compositions of the Earth and the Sun as a function of element condensation temperature shows such a <strong>devolatilization trend</strong>. To simulate the planet formation process, we apply depletion factors to all elements, based on the Earth-Sun devolatilization trend from <a href="https://doi.org/10.1016/j.icarus.2019.03.018" target="_blank">Wang et al. (2019)</a>. Thus, we arrive at a representative set of rocky exoplanet compositions. <br />
+                                    <strong> Read more details in our <a href="https://doi.org/10.3847/1538-4357/acac7d" target="_blank">2023</a> paper </strong></p>
+                            </header>
+                            
+                            <header>
+                                <h3> Condensation sequences </h3>
+                                <img class="image right" src="images/MgSi_Tc_fits.png" alt="Mg and Si condensation" width="800" height="500" >
+                                <p> The devolatilization trend will not be exactly the same for all planets. Namely, the element condensation temperatures depend on the composition of the protoplanetary disk. Elements may move up or down the devolatilization trend based on their condensation temperature, and an element that is refractory in the Solar nebula, such as Mg, may be much more volatile in another protoplanetary disk. Therefore, we simulate <strong>condensation sequences</strong> of other stars, which calculate the order in which condensates appear as a parcel of gas cools down. We use the condensation sequence model <a href="https://github.com/pw31/GGchem" target="_blank">GGChem</a> to simulate a large number of sequences, and calculate element condensation temperatures for each case. We have already investigated the condensation sequences for a small range of stars, focusing on different sulphur content, published as <a href="https://doi.org/10.1051/0004-6361/202142738" target="_blank">Jorge et al. (2022)</a>. A paper describing condensation for a larger sample of stellar abundances is in the works! <br />
+                                    <strong> More coming soon! </strong>
+                                </p>
+                            </header>
+                            
+                            <header>
+                                <h3> Graphite planets </h3>
+                                <!-- <img class="image left" src="images/Hypatia_triangle.png" alt="Stellar compositions from Hypatia catalog" width="800" height="500" > -->
+                                <p> In Protoplanetary disks with high carbon abundances, the condensation sequence looks fundamentally different. Specifically, most oxygen is captured by carbon to form the gas CO, leaving little oxygen to form silicates. Instead, condensates shift to carbides (e.g., SiC, TiC) or sulfides (e.g., CaS, MgS), making for rocky planets with fundamentally different chemical make-up. In these systems, a significant amount of carbon can condense and accrete on a planet in the form of graphite. In my bachelor's thesis, published as <a href="https://doi.org/10.1089/ast.2018.1930" target="_blank">Hakim et al. (2019)</a>, we found that most graphite stays apart, and likely forms a crust on top of the rocky mantle due to the low density of graphite. I am highly interested in both the occurrence rate and long-term evolution of these planets, and will likely pursue these planets in future research. <br />
+                                    <strong> Stay tuned! </strong></p>
+                            </header>
+                        </div>
 					</section>
+                    
+                    <section id="Work">
+                        <div class="container">
+                            <h2>Research: Long-term evolution of rocky exoplanets</h2><br />
+                            
+                            <p> Earth is the only habitable planet that we currently know of. The temperate surface conditions of our planets are for a large part thanks to many feedback mechanisms, some of which involve interaction between the surface and the interior. Gases like water and CO2 are constantly transported from the mantle to the surface through volcanism, and back into the mantle through subduction. This relatively free exchange requires the planet to be in a plate tectonics surface dynamic regime. There are many factors that go into whether a rocky planet is in a plate tectonics-like regime, such as planet size, core size, surface temperature, mantle viscosity, and many more. Since the bulk composition of a planet moderates both core size and mantle mineralogy, and thus many different mantle material properties, it may also play an important role in determining a planets surface dynamic regime. At least it is another parameter to consider. I study how bulk rocky planet composition affects mantle mineralogy and material properties, and how this affects the long-term evolution of these planets. </p>
+                            
+                            <header>
+                                <h3> Mantle dynamics </h3>
+                                <img class="image right" src="images/MgSi_regime_diagram.png" alt="Surface dynamic regime as a function of mantle Mg/Si" width="1400" height="200" >
+                                <p> StagYY <br />
+                                    <strong> More coming soon! </strong>
+                                </p>
+                            </header>
+                        
+                        </div>
+                    </section>
 
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-						<div class="row">
-							<div class="col-8 col-12-small">
-								<form method="post" action="#">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-small">
-								<ul class="labeled-icons">
-									<li>
-										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
-									</li>
-									<li>
-										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
-									</li>
-									<li>
-										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
-									</li>
-								</ul>
-							</div>
+						<p>I am always open for new collaborations! You will find me in room 166 of the Kapteyn Astronomical Institute in Groningen, the Netherlands. And you can always reach me at spaargaren@astro.rug.nl </p>
 						</div>
 					</section>
 
@@ -410,10 +422,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:spaargaren@astro.rug.nl" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
